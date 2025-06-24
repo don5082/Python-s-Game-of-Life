@@ -91,4 +91,6 @@ def main():
         print_g(grid)
         time.sleep(.5)
 
-main()
+if __name__ == "__main__":
+    main()
+

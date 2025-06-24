@@ -4,6 +4,7 @@ from posixpath import split
 from time import sleep
 
 
+
 def print_g(grid):
     print("  ",end=" ")
     for i in range(len(grid)):
@@ -25,7 +26,7 @@ def print_g(grid):
         print()
 
 def init(starting_values):
-    size = 15
+    size = int(input("how large would you like the grid to be? (max 100 for bugless experience)"))
     grid = [[' ' for _ in range(size)] for _ in range(size)]
 
     for item in starting_values:
@@ -66,6 +67,7 @@ def run(grid):
     return grid
 
 def main():
+
     grid = init([])
     print_g(grid)
     print("Enter starting values in form of y,x press enter after each entry")
